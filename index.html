@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11101c">
+  <title>OtakuWatch — Discover your next anime</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="OtakuWatch home"><span class="brand-mark">◈</span> Otaku<span>Watch</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#discover">Discover</a><a href="#services">Watch legally</a>
+    </nav>
+    <button class="mobile-menu" id="menuBtn" aria-label="Toggle navigation">☰</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> YOUR NEXT FAVORITE STARTS HERE</div>
+        <h1>Find your next<br><span>anime obsession.</span></h1>
+        <p>Explore fan favorites, find a new series, and jump to official streaming sources.</p>
+        <a class="primary-btn" href="#discover">Explore anime <span>↘</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="poster poster-back"><span>夜</span></div>
+        <div class="poster poster-front"><div class="poster-sun"></div><div class="poster-mountain"></div><b>ANIME<br>AWAITS</b><small>DISCOVER • WATCH • REPEAT</small></div>
+        <div class="float-tag">✦ New worlds await</div>
+      </div>
+    </section>
+
+    <section id="discover" class="catalog section">
+      <div class="section-heading">
+        <div><div class="eyebrow">THE CATALOG</div><h2>Pick your next watch</h2></div>
+        <label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="Search anime or genre…" autocomplete="off"></label>
+      </div>
+      <div class="filters" id="filters" aria-label="Filter by genre">
+        <button class="filter active" data-genre="All">All anime</button>
+        <button class="filter" data-genre="Action">Action</button>
+        <button class="filter" data-genre="Adventure">Adventure</button>
+        <button class="filter" data-genre="Fantasy">Fantasy</button>
+        <button class="filter" data-genre="Comedy">Comedy</button>
+        <button class="filter" data-genre="Drama">Drama</button>
+      </div>
+      <div id="animeGrid" class="anime-grid" aria-live="polite"></div>
+      <p class="fineprint">Availability varies by country and may change. OtakuWatch is a discovery page and does not host episodes.</p>
+    </section>
+
+    <section id="services" class="services section">
+      <div class="eyebrow">OFFICIAL SOURCES</div>
+      <h2>Watch from trusted platforms</h2>
+      <p class="section-intro">Choose a service to search its anime library. Some titles or episodes may require a subscription.</p>
+      <div class="service-grid">
+        <a class="service-card" href="https://www.crunchyroll.com/" target="_blank" rel="noopener noreferrer"><span class="service-icon crunchy">◉</span><span><b>Crunchyroll</b><small>Anime streaming</small></span><span class="arrow">↗</span></a>
+        <a class="service-card" href="https://www.tubi.tv/" target="_blank" rel="noopener noreferrer"><span class="service-icon tubi">T</span><span><b>Tubi</b><small>Free, ad-supported titles</small></span><span class="arrow">↗</span></a>
+        <a class="service-card" href="https://www.pluto.tv/" target="_blank" rel="noopener noreferrer"><span class="service-icon pluto">✦</span><span><b>Pluto TV</b><small>Free live channels and on-demand</small></span><span class="arrow">↗</span></a>
+        <a class="service-card" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><span class="service-icon youtube">▶</span><span><b>YouTube</b><small>Look for official distributor channels</small></span><span class="arrow">↗</span></a>
+      </div>
+    </section>
+  </main>
+  <footer><a class="brand" href="#"><span class="brand-mark">◈</span> Otaku<span>Watch</span></a><p>Made for anime fans. Episodes belong to their respective rights holders.</p><a href="#top" class="back-top">Back to top ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
